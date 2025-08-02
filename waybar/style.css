@@ -1,0 +1,69 @@
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: transparent;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.5;
+}
+
+#workspaces button {
+    all: initial;
+    /* Remove GTK theme values */
+    min-width: 0;
+    /* Fix weird spacing in materia */
+    box-shadow: inset 0 -3px transparent;
+    /* Use box-shadow instead of border so the text isn't offset */
+    padding: 0px 12px;
+    margin: 0px 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #ebdbb2;
+}
+
+#workspaces button.active {
+    color: #fe8019;
+}
+
+#workspaces button:hover {
+    color: #fbf1c7;
+}
+
+#workspaces button.urgent {
+    color: #fb4934;
+}
+
+#cpu,
+#memory,
+#pulseaudio,
+#power-profiles-daemon,
+#language,
+#custom-logo,
+#clock,
+#tray {
+    margin: 4px 3px;
+    padding: 2px 6px;
+    background-color: transparent;
+    color: #ebdbb2;
+}
+
+#custom-logo {
+    padding-right: 10px;
+    padding-left: 7px;
+    font-size: 13px;
+}
+
+#custom-notification {
+    margin-right: 14px;
+    color: #ebdbb2;
+}
