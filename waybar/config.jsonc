@@ -7,9 +7,10 @@
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-      "custom/logo",
+        "hyprland/workspaces",
     ],
     "modules-center": [
+      "clock",
     ],
     "modules-right": [
       "tray",
@@ -18,8 +19,8 @@
       "memory",
       "hyprland/language",
       "keyboard-state",
-      "clock",
-      "custom/notification"
+      "custom/notification",
+	  "custom/power"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -45,7 +46,7 @@
     "clock": {
         "timezone": "Asia/Riyadh",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%I:%M %p} "
+        "format": "{:%A %d - %I:%M %p} "
     },
     "cpu": {
       "format": "CPU: {usage}%",
@@ -92,15 +93,15 @@
       "format-ar": "AR",
       "keyboard-name": "corsair-corsair-gaming-k95-rgb-platinum-keyboard"
     },
-    "custom/logo": {
-        "format": "   Application ",
-        "tooltip": false,
-        "on-click": "~/.config/rofi/launchers/type-4/launcher.sh &"
-    },
     "custom/notification": {
         "format": "  ",
         "tooltip": true,
         "tooltip-format": "Show notification center",
         "on-click": "swaync-client -t",
     },
+	"custom/power": {
+	  "format" : "⏻   ",
+	  "tooltip": false,
+	  "on-click": "~/.config/rofi/powermenu/type-1/powermenu.sh"
+	}
 }
